@@ -15,7 +15,7 @@ class App extends React.Component {
   componentDidMount() {
     for (let i = 0; i < 152; i++) {
       this.props.getPokemon(i, (data) => {
-        this.setState({pokemon: [...this.state.pokemon, data.data]})
+        this.setState({pokemon: [...this.state.pokemon, data.data].sort((a,b) => a.id - b.id)})
       });
     }
   }
