@@ -1,10 +1,13 @@
 #pokemonList {
   display: flex;  
   flex-wrap: wrap;
+  background-color: #fff
 }
 
 .pokemonItem {
   border: 1px solid black;
   padding: 10px;
   margin: 5px;
+  background-color: red; 
+
 }
